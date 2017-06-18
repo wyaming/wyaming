@@ -9,4 +9,7 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
+Sitemap: https://www.wsdkzsb.com/sitemap.xml
+Sitemap: https://www.wsdkzsb.com/baidusitemap.xml
+
 
