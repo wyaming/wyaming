@@ -22,7 +22,7 @@
     
 
     
-        <link rel="icon" href="http://omano45dx.bkt.clouddn.com/favicon.png" />
+        <link rel="icon" href="http://omano45dx.bkt.clouddn.com/favo.png" />
     
 
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
@@ -98,18 +98,39 @@
                         <nav id="sub-nav">
                             <div id="search-form-wrap">
 
-    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
-    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
-</form>
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
 <script>
-(function ($) {
-    $('.search-form').on('submit', function (e) {
-        var keyword = $('.search-form-input[name="wd"]').val();
-        window.location = 'https://www.baidu.com/s?wd=site:www.wsdkzsb.com ' + keyword;
-        return false;
-    });
-})(jQuery);
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
+<script src="/js/insight.js"></script>
 
 </div>
                         </nav>
@@ -293,7 +314,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PP器皿柜/">PP器皿柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PP柜/">PP柜</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PP试剂柜/">PP试剂柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全柜/">安全柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存柜/">寄存柜</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/强酸强碱柜/">强酸强碱柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/易燃液体防火/">易燃液体防火</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条码寄存柜/">条码寄存柜</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/氮气柜/">氮气柜</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/真空干燥箱/">真空干燥箱</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/通风柜/">通风柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/防潮柜/">防潮柜</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/防磁柜/">防磁柜</a><span class="tag-list-count">6</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PP器皿柜/">PP器皿柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PP柜/">PP柜</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PP试剂柜/">PP试剂柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全柜/">安全柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存柜/">寄存柜</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/强酸强碱柜/">强酸强碱柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/恒温/">恒温</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/恒湿/">恒湿</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/易燃液体防火/">易燃液体防火</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条码寄存柜/">条码寄存柜</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/氮气柜/">氮气柜</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/真空干燥箱/">真空干燥箱</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/通风柜/">通风柜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/防潮柜/">防潮柜</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/防磁柜/">防磁柜</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/高低温/">高低温</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/高低温冲击/">高低温冲击</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -311,7 +332,7 @@
                             <a href="/2017/06/18/两箱式高低温冲击试验箱/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(http://7xruh0.com1.z0.glb.clouddn.com/170618两冲击.jpg)" alt="两箱式高低温冲击试验箱" class="thumbnail-image"></span>
     
     
 </a>
@@ -319,7 +340,7 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/温湿箱/">温湿箱</a></p>
                             <p class="item-title"><a href="/2017/06/18/两箱式高低温冲击试验箱/" class="title">两箱式高低温冲击试验箱</a></p>
                             <p class="item-date"><time datetime="2017-06-18T01:43:29.000Z" itemprop="datePublished">2017-06-18</time></p>
                         </div>
@@ -331,7 +352,7 @@
                             <a href="/2017/06/18/高低温试验箱/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(http://7xruh0.com1.z0.glb.clouddn.com/170618高低温02.jpg)" alt="高低温试验箱" class="thumbnail-image"></span>
     
     
 </a>
@@ -339,7 +360,7 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/温湿箱/">温湿箱</a></p>
                             <p class="item-title"><a href="/2017/06/18/高低温试验箱/" class="title">高低温试验箱</a></p>
                             <p class="item-date"><time datetime="2017-06-18T01:43:21.000Z" itemprop="datePublished">2017-06-18</time></p>
                         </div>
@@ -351,7 +372,7 @@
                             <a href="/2017/06/18/三厢冷热冲击试验箱/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(http://7xruh0.com1.z0.glb.clouddn.com/170618三冲击05.jpg)" alt="三厢冷热冲击试验箱" class="thumbnail-image"></span>
     
     
 </a>
@@ -359,7 +380,7 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/温湿箱/">温湿箱</a></p>
                             <p class="item-title"><a href="/2017/06/18/三厢冷热冲击试验箱/" class="title">三厢冷热冲击试验箱</a></p>
                             <p class="item-date"><time datetime="2017-06-18T01:43:11.000Z" itemprop="datePublished">2017-06-18</time></p>
                         </div>
@@ -371,7 +392,7 @@
                             <a href="/2017/06/18/恒温恒湿试验箱/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(http://7xruh0.com1.z0.glb.clouddn.com/170618恒温湿03.jpg)" alt="恒温恒湿试验箱" class="thumbnail-image"></span>
     
     
 </a>
@@ -379,7 +400,7 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/温湿箱/">温湿箱</a></p>
                             <p class="item-title"><a href="/2017/06/18/恒温恒湿试验箱/" class="title">恒温恒湿试验箱</a></p>
                             <p class="item-date"><time datetime="2017-06-18T01:42:37.000Z" itemprop="datePublished">2017-06-18</time></p>
                         </div>
